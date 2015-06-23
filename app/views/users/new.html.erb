@@ -1,0 +1,8 @@
+    <form accept-charset="UTF-8" action="/users" method="post">
+      <input id="user_username" name="user[username]" type="text" />
+      <input id="user_email" name="user[email]" type="text" />
+      <input id="user_password" name="user[password]" type="text" />
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <input name="commit" type="submit" value="Create" />
+    </form>
+
